@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CultMovies</title>
+<link rel="stylesheet" href="./css/reset.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <!--Menú de navegación y logo-->
+    <header>
+        <nav>
+            <div class="contenedor-menu">
+                <img src="./media/logo.jpg" alt="logo cult movies"
+                width="9%" height="9%"
+                > 
+                <span>Películas</span>
+                <span>Series</span>
+                <span>Documentales</span>
+            </div>
+        </nav>
+    </header>
+      <!--Título de la página y secciones-->
+<main>
+    <section class="titulo">
+        <h1>Redescubriendo cine de culto </h1>
+        <article>
+            <img src="./media/headercm.jpg" alt="collage of John Waters movies" width="70%">
+        </article>
+    </section>
+</main>
+<section class="Películas">
+<h1>Películas</h1>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ZNAHcMMOHE8?si=-a_8QqTHTie7ZINb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+</iframe>
+<iframe src="https://player.vimeo.com/video/388834918?h=55bb683c16" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+</section>
+<section class="Series">
+    <h1>Series</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/3aeDFswB8fY?si=r8hsP-4XesGpbTBc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+    </iframe>
+</section>
+ <!--Footer y formulario-->
+<footer>© 2023 CultMovies, todos los derechos reservados. Hay 2 películas disponibles</footer>
+<form action="" method="get" autocomplete="on">
+<fieldset>
+    <legend>Datos</legend>
+    <label for="nombre">Nombre</label>
+    <input type="text" name="nombre" placeholder="Ingrese su nombre">
+    <br>
+    <label for="email">E-mail</label>
+    <input type="text" name="email" placeholder="Ingrese su email">
+    <br>
+    <label for="asunto">Asunto</label>
+    <input type="text" name="asunto"placeholder="Motivo de contacto">
+    <br>
+    <label for="checkbox">¿Desea recibir novedades?</label>
+    <input type="checkbox">
+    <br>
+    <label for="mensaje">Mensaje</label>
+    <textarea name="mensaje" placeholder="Deja tu mensaje" cols="30" rows="10"></textarea>
+</fieldset>
+<br>
+<button type="submit" value="enviar">Enviar</button>
+<button type="reset" value="resetear campos">Reset</button>
+</form>
+</body>
+</html>

@@ -1,0 +1,14 @@
+body{
+    background-color:rgb(13, 3, 3);
+    font-family: 'Inconsolata', monospace;
+    color:whitesmoke ;
+    margin: 2%;
+    padding: 2%;
+    } 
+footer{
+    background-color: #AE333D;
+}
+.titulo{
+    font-size: 1.2rem;
+    color:azure 
+}
