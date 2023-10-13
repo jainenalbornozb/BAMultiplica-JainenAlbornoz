@@ -14,32 +14,47 @@
     <!--Menú de navegación y logo-->
     <header>
         <nav>
-            <div class="contenedor-menu">
-                <img src="./media/logo.jpg" alt="logo cult movies"
-                width="9%" height="9%"
-                > 
-                <span>Películas</span>
-                <span>Series</span>
-                <span>Documentales</span>
-            </div>
+            <div id="contenedor-nav">
+                <div class="Home">
+                    <nav>
+              <a href="index.html"> <img src="./media/logo.jpg"  width="10%" height="10%" alt="logo-cult-movies"></a>
+            </nav>
         </nav>
+    </div>
+</div>
+<nav>
+    <div id="navbar" class="navbar">
+<ul class="nav-bar">
+    <li class="nav-item">
+<a class="nav-link-menu" href="#">Películas</a>
+    </li>
+<li class="nav-item">
+    <a class="nav-link-menu" href="#">Series</a>
+</li>
+<li class="nav-item">
+<a class="nav-link-menu" href="#">Documentales</a>
+</li>
+</ul>
+    </div>
+</nav>
+
     </header>
       <!--Título de la página y secciones-->
 <main>
     <section class="titulo">
         <h1>Redescubriendo cine de culto </h1>
         <article>
-            <img src="./media/headercm.jpg" alt="collage of John Waters movies" width="70%">
+            <img class="header" id="header" src="./media/headercm.jpg" alt="collage of John Waters movies" width="70%">
         </article>
     </section>
 </main>
-<section class="Películas">
+<section class="peliculas">
 <h1>Películas</h1>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ZNAHcMMOHE8?si=-a_8QqTHTie7ZINb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
 </iframe>
 <iframe src="https://player.vimeo.com/video/388834918?h=55bb683c16" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
 </section>
-<section class="Series">
+<section class="series">
     <h1>Series</h1>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/3aeDFswB8fY?si=r8hsP-4XesGpbTBc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
     </iframe>
@@ -47,7 +62,7 @@
  <!--Footer y formulario-->
 <footer>© 2023 CultMovies, todos los derechos reservados. Hay 2 películas disponibles</footer>
 <form action="" method="get" autocomplete="on">
-<fieldset>
+<fieldset class="formulario">
     <legend>Datos</legend>
     <label for="nombre">Nombre</label>
     <input type="text" name="nombre" placeholder="Ingrese su nombre">

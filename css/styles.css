@@ -1,14 +1,40 @@
-body{
-    background-color:rgb(13, 3, 3);
+.contenedor-nav{
+    display: flex;
+    justify-content: left;
+}
+.nav-bar{
     font-family: 'Inconsolata', monospace;
-    color:whitesmoke ;
+    color: whitesmoke;
+    display: flex;
+    justify-content: space-between;
     margin: 2%;
     padding: 2%;
-    } 
+}
+.header{
+    display: flex;
+    justify-content: center;
+}
+    body{
+        background-color:rgb(13, 3, 3); ;
+    }
+.titulo{
+    font-family: 'Inconsolata', monospace;
+    font-size: 1.2rem;
+    color:whitesmoke 
+}
+.peliculas{
+    font-family: 'Inconsolata', monospace;
+    color:whitesmoke 
+}
+.series{
+    font-family: 'Inconsolata', monospace;
+    color:whitesmoke 
+}
 footer{
+    font-family: 'Inconsolata', monospace;
     background-color: #AE333D;
 }
-.titulo{
-    font-size: 1.2rem;
-    color:azure 
+.formulario{
+    font-family: 'Inconsolata', monospace;
+    color: whitesmoke;
 }
