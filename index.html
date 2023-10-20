@@ -1,70 +1,55 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CultMovies</title>
-<link rel="stylesheet" href="./css/reset.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="./css/styles.css">
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>CultMovies</title>
+     <!--Hojas de estilo-->
+     <link rel="stylesheet" href="./css/reset.css">
+     <link rel="stylesheet" href="./css/styles.css">
+     <!--Fuentes-->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
 </head>
 <body>
     <!--Menú de navegación y logo-->
-    <header>
-        <nav>
-            <div id="contenedor-nav">
-                <div class="Home">
-                    <nav>
-              <a href="index.html"> <img src="./media/logo.jpg"  width="10%" height="10%" alt="logo-cult-movies"></a>
+    <header class="contenedor-header-nav" id="header-index">
+    <a class="logo-nav" href="index.html"> <img src="./media/logo.jpg" alt="logo-cult-movies"></a>
+            <nav class="contenedor-nav">       
+              <span><a href="index.html" target="_blank">Películas</a></span>
+              <span><a href="index.html" target="_blank" >Series</a></span>
+              <span><a href="index.html" target="_blank" >Documentales</a></span>
+              <button name="buscar" type="button"><img class="iconobuscar" src="./assets/noun-search-icon-304938.svg" alt="icono-buscar"></button>
+              <button name="usuario" type="button"><img class="iconouser" src="./assets/noun-settings-6195899.svg" alt="icono-user-config"></button>
             </nav>
-        </nav>
-    </div>
-</div>
-<nav>
-    <div id="navbar" class="navbar">
-<ul class="nav-bar">
-    <li class="nav-item">
-<a class="nav-link-menu" href="#">Películas</a>
-    </li>
-<li class="nav-item">
-    <a class="nav-link-menu" href="#">Series</a>
-</li>
-<li class="nav-item">
-<a class="nav-link-menu" href="#">Documentales</a>
-</li>
-</ul>
-    </div>
-</nav>
-
+            
     </header>
       <!--Título de la página y secciones-->
 <main>
     <section class="titulo">
-        <h1>Redescubriendo cine de culto </h1>
+        <h1>Descubriendo cine de culto </h1>
         <article>
-            <img class="header" id="header" src="./media/headercm.jpg" alt="collage of John Waters movies" width="70%">
+        <img class="headercm" src="./media/headercm.jpg" alt="collage of John Waters movies" width="70%" height="70%">
         </article>
     </section>
 </main>
 <section class="peliculas">
-<h1>Películas</h1>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ZNAHcMMOHE8?si=-a_8QqTHTie7ZINb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
-</iframe>
-<iframe src="https://player.vimeo.com/video/388834918?h=55bb683c16" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+    <h2>Películas</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/ZNAHcMMOHE8?si=-a_8QqTHTie7ZINb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+    </iframe>
+    <iframe src="https://player.vimeo.com/video/388834918?h=55bb683c16" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
 </section>
 <section class="series">
-    <h1>Series</h1>
+    <h2>Series</h2>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/3aeDFswB8fY?si=r8hsP-4XesGpbTBc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
     </iframe>
 </section>
- <!--Footer y formulario-->
-<footer>© 2023 CultMovies, todos los derechos reservados. Hay 2 películas disponibles</footer>
+ <!--Formulario y footer-->
 <form action="" method="get" autocomplete="on">
-<fieldset class="formulario">
+        <fieldset class="formulario">
     <legend>Datos</legend>
-    <label for="nombre">Nombre</label>
+        <label for="nombre">Nombre</label>
     <input type="text" name="nombre" placeholder="Ingrese su nombre">
     <br>
     <label for="email">E-mail</label>
@@ -78,10 +63,11 @@
     <br>
     <label for="mensaje">Mensaje</label>
     <textarea name="mensaje" placeholder="Deja tu mensaje" cols="30" rows="10"></textarea>
-</fieldset>
-<br>
-<button type="submit" value="enviar">Enviar</button>
-<button type="reset" value="resetear campos">Reset</button>
+        </fieldset>
+    <br>
+    <button type="submit" value="enviar">Enviar</button>
+    <button type="reset" value="resetear campos">Reset</button>
 </form>
+<footer>© 2023 CultMovies, todos los derechos reservados. Hay 2 películas y 1 serie disponibles</footer>
 </body>
 </html>

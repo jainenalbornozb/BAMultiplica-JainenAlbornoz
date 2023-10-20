@@ -1,40 +1,90 @@
+.logo-nav{
+    display: flex;
+    align-content: flex-start;
+    width: 6rem;
+    height: 6rem;
+}
+.contenedor-header-nav{
+    padding: 1%;
+    background-color: #AE333D;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 .contenedor-nav{
     display: flex;
-    justify-content: left;
+    flex-wrap: wrap;
+    margin-top: 1%;
+    column-gap: 2rem;
+    font-family: 'inconsolata', monospace;
+    color: black;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
 }
-.nav-bar{
-    font-family: 'Inconsolata', monospace;
-    color: whitesmoke;
+.iconobuscar{
+    background-color: antiquewhite;
+    border: 1px solid black;
+    border-radius: 80px;
+    margin-top: 1%;
+    width: 2cap;
+    padding: 10px 10px;
+}
+.iconouser{
+    background-color: antiquewhite;
+    border: 1px solid black;
+    border-radius: 80px;
+    margin-top: 1%;
+    width: 2cap;
+    padding: 10px 10px;
+}
+.headercm{
+    padding: 1%;
     display: flex;
-    justify-content: space-between;
-    margin: 2%;
-    padding: 2%;
+    align-content: center;
+    width: 70%;
+    height: 100%;
+    margin-top: 1%;
 }
-.header{
+body{
+        background-color:rgb(18, 5, 0)
+    }
+.titulo{
+    padding: 1%;
+    font-family: 'Inconsolata', monospace;
+    font-size: 1rem;
+    font-weight: 100;
+    color:whitesmoke ;
     display: flex;
     justify-content: center;
 }
-    body{
-        background-color:rgb(13, 3, 3); ;
-    }
-.titulo{
-    font-family: 'Inconsolata', monospace;
-    font-size: 1.2rem;
-    color:whitesmoke 
-}
 .peliculas{
+    padding: 1%;
     font-family: 'Inconsolata', monospace;
+    font-weight: 400;
     color:whitesmoke 
 }
 .series{
+    padding: 1%;
     font-family: 'Inconsolata', monospace;
     color:whitesmoke 
 }
+.formulario{
+    padding:1%;
+    font-family: 'Inconsolata', monospace;
+    color: whitesmoke;
+}
 footer{
+    padding: 1%;
     font-family: 'Inconsolata', monospace;
     background-color: #AE333D;
 }
-.formulario{
-    font-family: 'Inconsolata', monospace;
-    color: whitesmoke;
+
+@media (max-width: 320px) {
+    body{
+        flex-direction:column-reverse;
+        height: 150px;
+        font-size: 20px;
+        
+    }
 }
