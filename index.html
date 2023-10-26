@@ -11,23 +11,28 @@
      <link rel="preconnect" href="https://fonts.googleapis.com">
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
      <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
-     <!--Animaciones de Boostrap-->
+     <!--Animación y Bootstrap-->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-     
+     <link rel="stylesheet" href="./css/bootstrap.min.css">
 </head>
-<body>
+<body class="container">
     <!--Menú de navegación y logo-->
     <header class="contenedor-header-nav" id="header-index">
     <a class="logo-nav" href="index.html"> <img src="./media/logo.jpg" alt="logo-cult-movies"></a>
             <nav class="contenedor-nav">       
-              <span><a href="index.html" target="_blank">Películas</a></span>
-              <span><a href="index.html" target="_blank" >Series</a></span>
-              <span><a href="index.html" target="_blank" >Documentales</a></span>
-              <button name="buscar" type="button"><img class="iconobuscar" src="./assets/noun-search-icon-304938.svg" alt="icono-buscar"></button>
-              <button name="usuario" type="button"><img class="iconouser" src="./assets/noun-settings-6195899.svg" alt="icono-user-config"></button>
-            </nav>
-            
+              <button type="button" class="btn btn-light"><a href="index.html" target="_blank">Películas</a></button>
+              <button type="button" class="btn btn-light"><a href="index.html" target="_blank" >Series</a></button>
+              <button type="button" class="btn btn-light"><a href="index.html" target="_blank" >Documentales</a></button>
+              <button type="button" name="buscar"><img class="iconobuscar" src="./assets/noun-search-icon-304938.svg" alt="icono-buscar"></button>
+              <button type="button" name="usuario"><img class="iconouser" src="./assets/noun-settings-6195899.svg" alt="icono-user-config"></button>
+              <div class="row">                 
+              <div class="col-sm-4"></div>
+              <div class="col-sm-4"></div>
+              <div class="col-sm-4"></div>
+              </div>
+            </nav>     
     </header>
+    <script src="./js/bootstrap.min.js"></script>
       <!--Título de la página y secciones-->
 <main>
     <section class="titulo">
@@ -42,11 +47,21 @@
     <iframe width="560" height="315" src="https://www.youtube.com/embed/ZNAHcMMOHE8?si=-a_8QqTHTie7ZINb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
     </iframe>
     <iframe src="https://player.vimeo.com/video/388834918?h=55bb683c16" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/rd-_bO6sayM?si=ddA5Ifp9CLfyyFh0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/3meQcngHttA?si=PFgGjpAHQXKaY_xm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </section>
 <section class="series">
     <h2 class="animate__animated animate__flip">Series</h2>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/3aeDFswB8fY?si=r8hsP-4XesGpbTBc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
-    </iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/3aeDFswB8fY?si=r8hsP-4XesGpbTBc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/sM-RwR_cZOc?si=km0hk7ioTU2Ju6UW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/3YSTIUlkURE?si=W7D2nHGE6YX2K6GK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/erRNcPgh-FA?si=ALsJOxV0DTTBrT7H" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+</section>
+<section class="documentales">
+    <h2 class="animate__animated animate__flip">Documentales</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/ZIIk6viG2Ss?si=BHpJm_7pEbZKW1Ix" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/WfBuMoSJsTo?si=IvdHqTszwrvwA-KR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </section>
  <!--Formulario y footer-->
 <form action="" method="get" autocomplete="on">
@@ -68,9 +83,9 @@
     <textarea name="mensaje" placeholder="Deja tu mensaje" cols="30" rows="10"></textarea>
         </fieldset>
     <br>
-    <input class="btn btn-primary" type="submit" value="Submit">
-    <input class="btn btn-primary" type="reset" value="Reset">
+    <input class="btn btn-dark" type="submit" value="Submit">
+    <input class="btn btn-dark" type="reset" value="Reset">
 </form>
-<footer>© 2023 CultMovies, todos los derechos reservados. Hay 2 películas y 1 serie disponibles</footer>
+<footer>© 2023 CultMovies, todos los derechos reservados. Hay 4 películas, 4 series y 2 documentales disponibles en nuestra web</footer>
 </body>
 </html>
