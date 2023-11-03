@@ -6,34 +6,61 @@
      <title>CultMovies</title>
      <!--Hojas de estilo-->
      <link rel="stylesheet" href="./css/reset.css">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
      <link rel="stylesheet" href="./css/styles.css">
      <!--Fuentes-->
      <link rel="preconnect" href="https://fonts.googleapis.com">
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
      <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
-     <!--Animación y Bootstrap-->
+     <!--Animación-->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-     <link rel="stylesheet" href="./css/bootstrap.min.css">
+
 </head>
-<body class="container">
-    <!--Menú de navegación y logo-->
-    <header class="contenedor-header-nav" id="header-index">
-    <a class="logo-nav" href="index.html"> <img src="./media/logo.jpg" alt="logo-cult-movies"></a>
-            <nav class="contenedor-nav">       
-              <button type="button" class="btn btn-light"><a href="index.html" target="_blank">Películas</a></button>
-              <button type="button" class="btn btn-light"><a href="index.html" target="_blank" >Series</a></button>
-              <button type="button" class="btn btn-light"><a href="index.html" target="_blank" >Documentales</a></button>
-              <button type="button" name="buscar"><img class="iconobuscar" src="./assets/noun-search-icon-304938.svg" alt="icono-buscar"></button>
-              <button type="button" name="usuario"><img class="iconouser" src="./assets/noun-settings-6195899.svg" alt="icono-user-config"></button>
-              <div class="row">                 
-              <div class="col-sm-4"></div>
-              <div class="col-sm-4"></div>
-              <div class="col-sm-4"></div>
-              </div>
-            </nav>     
-    </header>
-    <script src="./js/bootstrap.min.js"></script>
-      <!--Título de la página y secciones-->
+<body class="contenedor">
+    <!--Barra de navegación y logo-->
+    <nav class="navbar navbar-expand-sm navbar-danger" style="background-color: #AE333D;" aria-label="Third navbar example">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"> <img src="./media/logo.jpg" class="logo-nav" alt="logo-cult-movies"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarsExample03">
+            <ul class="navbar-nav me-auto mb-2 mb-sm-0">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Películas</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Acción</a></li>
+                      <li><a class="dropdown-item" href="#">Aventura</a></li>
+                      <li><a class="dropdown-item" href="#">Ciencia ficción</a></li>
+                      <li><a class="dropdown-item" href="#">Comedia</a></li> 
+                      <li><a class="dropdown-item" href="#">Drama</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Series</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Animada</a></li>
+                    <li><a class="dropdown-item" href="#">Comedia</a></li>
+                    <li><a class="dropdown-item" href="#">Terror</a></li>
+                  </ul>
+                </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Documentales</a>
+              </li>
+            </ul>
+            
+            <form role="search">
+              <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+            </form>
+
+
+            </form>
+          </div>
+        </div>
+      </nav>
+    <!--Acá termina la barra de navegación-->
+
+    <!--Título de la página y secciones-->
 <main>
     <section class="titulo">
         <h1 class="animate__animated animate__shakeY" >Descubriendo cine de culto </h1>
@@ -47,8 +74,10 @@
     <iframe width="560" height="315" src="https://www.youtube.com/embed/ZNAHcMMOHE8?si=-a_8QqTHTie7ZINb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
     </iframe>
     <iframe src="https://player.vimeo.com/video/388834918?h=55bb683c16" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/rd-_bO6sayM?si=ddA5Ifp9CLfyyFh0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/3meQcngHttA?si=PFgGjpAHQXKaY_xm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/rd-_bO6sayM?si=ddA5Ifp9CLfyyFh0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+    </iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/3meQcngHttA?si=PFgGjpAHQXKaY_xm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+    </iframe>
 </section>
 <section class="series">
     <h2 class="animate__animated animate__flip">Series</h2>
@@ -86,5 +115,5 @@
     <input class="btn btn-dark" type="reset" value="Reset">
 </form>
 <footer>© 2023 CultMovies, todos los derechos reservados. Hay 4 películas, 4 series y 2 documentales disponibles en nuestra web</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
-</html>

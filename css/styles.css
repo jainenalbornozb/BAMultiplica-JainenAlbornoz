@@ -2,41 +2,17 @@
 .logo-nav{
     display: flex;
     align-content: flex-start;
-    width: 7rem;
-    height: 7rem;
+    width: 6rem;
+    height: 6rem;
 }
-.contenedor-header-nav{
-    padding: 1%;
+.navbar{
     background-color: #AE333D;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
 }
-.contenedor-nav{
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 1%;
-    column-gap: 2rem;
+.nav-item{
+    background-color: #AE333D;
     font-family: 'inconsolata', monospace;
-    color: black;
     font-size: 1rem;
     font-weight: bold;
-    text-align: center;
-}
-.iconobuscar{
-    background-color: antiquewhite;
-    border-radius: 80px;
-    margin-top: 1%;
-    width: 2cap;
-    padding: 10px 10px;
-}
-.iconouser{
-    background-color: antiquewhite;
-    border-radius: 80px;
-    margin-top: 1%;
-    width: 2cap;
-    padding: 10px 10px;
 }
 .headercm{
     display: flex;
@@ -46,14 +22,14 @@
     margin-top: 1%;
 }
 body{
-        background-color:rgb(18, 5, 0) !important;
+    background-color:rgb(18, 5, 0) !important;
     }
 
     /*Estilo de textos*/
 .titulo{
     font-family: 'Inconsolata', monospace;
     font-size: 1rem;
-    font-weight: 100;
+    font-weight: 10px;
     color:whitesmoke ;
     font-size: larger;
 }
@@ -87,27 +63,10 @@ footer{
     background-color: #AE333D;
 }
 
-/*Estilo para pantallas pequeñas, celular en modo vertical*/
-
-@media (max-width: 320px){
-    body{
-        flex-direction:column;
-        height: 120px;
-        font-size: 15px;
-    }
-    .headercm{
-        width: 60%;
-    }
-}
 /*Estilo para tabletas en modo horizontal, pantallas de notebook, netbook y pc de escritorio*/
 @media (max-width: 1024px){
     body{
-        flex-direction: row;
         font-size: 30px;
         flex-wrap: nowrap;
-    }
-    .contenedor-header-nav{
-        column-gap: 2rem;
-        padding-right: 5%;
     }
 }
