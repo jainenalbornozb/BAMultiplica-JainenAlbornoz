@@ -27,7 +27,7 @@
           <div class="collapse navbar-collapse" id="navbarsExample03">
             <ul class="navbar-nav me-auto mb-2 mb-sm-0">
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Películas</a>
+                    <a class="nav-link dropdown-toggle colorenlace" href="#" data-bs-toggle="dropdown" aria-expanded="false">Películas</a>
                     <ul class="dropdown-menu">
                       <li><a class="dropdown-item" href="#">Acción</a></li>
                       <li><a class="dropdown-item" href="#">Aventura</a></li>
@@ -37,7 +37,7 @@
                     </ul>
                   </li>
                   <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Series</a>
+                  <a class="nav-link dropdown-toggle colorenlace" href="#" data-bs-toggle="dropdown" aria-expanded="false">Series</a>
                   <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="#">Animada</a></li>
                     <li><a class="dropdown-item" href="#">Comedia</a></li>
@@ -45,13 +45,24 @@
                   </ul>
                 </li>
               <li class="nav-item">
-                <a class="nav-link" href="index.html">Documentales</a>
+                <a class="nav-link colorenlace" href="index.html">Documentales</a>
               </li>
             </ul>
-            
-            <form role="search">
-              <input class="form-control" type="search" placeholder="Search" aria-label="Search">
-            </form>
+            <a href="index.html"> <img class="icon-user" src="./assets/noun-settings-6195899.svg" width="30" height="30" alt="icono de user y configuracion"></a>
+            <form class="d-flex input-group w-auto">
+              <input
+                type="search"
+                class="form-control"
+                placeholder="Buscar películas"
+                aria-label="Buscar"
+              />
+              <button
+                class="btn btn-outline-dark"
+                type="button"
+                data-mdb-ripple-color="dark"
+              >
+                Buscar
+              </button>
 
 
             </form>
