@@ -82,6 +82,13 @@ footer{
     }
 }
 
+/*Página de formulario para iniciar sesión*/
+.container{
+    background-color: #AE333D;
+    font-family: 'Inconsolata', monospace;
+    color: whitesmoke;
+}
+
 /*Estilo para tabletas en modo horizontal, pantallas de notebook, netbook y pc de escritorio*/
 @media (max-width: 1024px){
     body{
