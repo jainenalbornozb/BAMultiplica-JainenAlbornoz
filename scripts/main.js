@@ -1,9 +1,3 @@
-let nombre_usuario = prompt("¡Hola! ¿Cómo te llamas?");
-
-console.log(nombre_usuario);
-
-alert("¡Hola" + nombre_usuario + "bienvenido a Cultmovies!");
-
 document.getElementById("titulopagina");
 
 let paginatitulo = document.getElementById("titulopagina");
