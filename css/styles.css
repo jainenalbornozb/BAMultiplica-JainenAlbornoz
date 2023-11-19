@@ -17,8 +17,8 @@
 .colorenlace{
     color: black;
 }
-.icon-user{
-    margin-left: 2%;
+.icon-contact{
+    margin-left: 5%;
     margin-bottom: 2%;
 }
 
@@ -59,18 +59,67 @@ body{
     font-weight: 20%;
     color:whitesmoke
 }
-/*Estilo formulario y footer*/
-.formulario{
-    padding:1%;
-    font-family: 'Inconsolata', monospace;
-    color: whitesmoke;
-}
+/*Estilo footer*/
 footer{
     padding: 1%;
     font-family: 'Inconsolata', monospace;
     background-color: #AE333D;
 }
-
+/*Estilo de formulario de sugerencias*/
+.contact-form{
+    background-color: #AE333D !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 800px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 50px;
+    font-family: 'Inconsolata', monospace;
+    font-size: 1rem;
+    font-weight: 10px;
+    color:whitesmoke ;
+    font-size: larger;
+  }
+.sugerencias{
+    box-sizing:content-box;
+    width: 50%;
+}
+.label {
+    display: block;
+    margin-bottom: 5px;
+  }
+.formulario div input {
+  width: 100%;
+  height: 60px;
+  border-radius: 8px;
+  outline: none;
+  padding: 0 30px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+.formulario div {
+  position: center;
+  margin-bottom: 15px;
+}
+.input:focus {
+  border: 2px solid #f2796e;
+}
+.failure-icon,
+.error {
+  color: red;
+}
+.success-icon {
+  color: green;
+}
+.error {
+  font-size: 14.5px;
+  margin-top: 5px;
+}
+.btn-submit{ 
+    cursor: pointer;
+}
+.btn-reset{
+    cursor: pointer;
+}
 /*Estilo para móviles*/
 @media (min-width: 768px){
     video{
@@ -82,17 +131,13 @@ footer{
     }
 }
 
-/*Página de formulario para iniciar sesión*/
-.container{
-    background-color: #AE333D;
-    font-family: 'Inconsolata', monospace;
-    color: whitesmoke;
-}
-
 /*Estilo para tabletas en modo horizontal, pantallas de notebook, netbook y pc de escritorio*/
 @media (max-width: 1024px){
     body{
         font-size: 30px;
         flex-wrap: nowrap;
     }
+    video{
+        width: 100%;
+}
 }
