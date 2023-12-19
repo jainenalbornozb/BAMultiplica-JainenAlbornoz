@@ -1,7 +1,7 @@
 Presentación
 
 Me llamo Jainen Banquero Albornoz y este proyecto ha sido relizado en HTML, CSS y JAVASCRIPT.
-Este proyecto surgió como forma de hacer tributo a una página web muy querida por mi: CultMoviez y forma parte de la entrega del proyecto final para BA Multplica.
+Este proyecto surgió como forma de hacer tributo a una página web muy querida por mi: CultMoviez, y forma parte de la entrega del proyecto final para BA Multplica.
 Opté por Desktop first, por eso la versión móvil del sitio aún puede verse un poco rudimentaria.
 
 Secciones de la web
