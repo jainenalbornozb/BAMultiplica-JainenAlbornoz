@@ -5,9 +5,11 @@ Este proyecto surgió como forma de hacer tributo a una página web muy querida 
 Opté por Desktop first, por eso la versión móvil del sitio aún puede verse un poco rudimentaria.
 
 Secciones de la web
+
 -Logo insertado en la barra de navegación con menú desplegable
 -Portada de la web
 -Secciones: películas, series y documentales
 -Footer 
+
 Segunda página web:
 -Formulario de sugerencias
